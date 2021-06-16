@@ -11,13 +11,18 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	
-	<repositories>
-	  <repository>
-	   <id>central</id>
-          <name>default-maven-local</name>
-          <url>https://impotosbrasil.jfrog.io/artifactory/default-maven-local/</url>
-	  </repository>
-	<repositories>
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>a0uxukreujlj3-artifactory-primary-0-releases</name>
+        <url>https://impotosbrasil.jfrog.io/artifactory/default-maven-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0uxukreujlj3-artifactory-primary-0-snapshots</name>
+        <url>https://impotosbrasil.jfrog.io/artifactory/default-maven-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
 
 	<dependencies>
