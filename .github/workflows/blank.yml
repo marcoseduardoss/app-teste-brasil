@@ -19,7 +19,13 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+          server-id: artifactory
+          server-username: MAVEN_REPO_USER
+          server-password: MAVEN_REPO_PASS
           
       - name: Excutando os testes
         run: mvn test
+        env:
+          MAVEN_REPO_PASS: ${{ secrets.MAVEN_REPO_PASS }}
+          MAVEN_REPO_USER: ${{ secrets.MAVEN_REPO_USER }}
         
