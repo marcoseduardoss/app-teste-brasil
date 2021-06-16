@@ -11,13 +11,13 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	
-	<distributionManagement>
+	<repositories>
 	  <repository>
 	   <id>central</id>
           <name>default-maven-local</name>
           <url>https://impotosbrasil.jfrog.io/artifactory/default-maven-local/</url>
 	  </repository>
-	</distributionManagement>
+	<repositories>
 
 
 	<dependencies>
